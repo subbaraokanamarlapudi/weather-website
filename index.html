@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Website </title>
+    <title> Weather App </title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h2>Weather</h2>
+    <div class="container">
+        <div class="title">
+            <p> Weather App </p>
+        </div>
+
+        <div class="input">
+            <input type="text" id="location-input" placeholder="Enter a location"/>
+            <input type="button" value="Get" id="btn"/>
+        </div>
+
+        <div class="info">
+            <img src="cloud.png" alt="mobuu"/>
+            <div>
+                <span id="temp-value">25</span>
+                <span id="unit">&#176</span>
+                <span id="c">C</span>
+
+                <div id="Weather-desc"> Cloudy </div>
+                <div id="location"> Hyderbad </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </div>
 </body>
 </html>
